@@ -1,0 +1,199 @@
+*{
+    /* font-size: 16px; */
+    font-family: sans-serif;
+    font-weight: bold;
+    /* color:#000; */
+}
+
+
+body{
+    background: #fff;
+}
+
+.main{
+    background: hsl(27, 66%, 92%);
+    width: 90%;
+    border-radius: 10px;
+    margin: 3%;
+    padding:30px;
+}
+
+.container{
+    width: 50%;
+    margin:5% auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    /* border: 1px solid; */ 
+}
+
+.top{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    align-items: center;
+    border: 1px solid;
+    padding:5px;
+    border-radius:15px;
+    background: hsl(10, 79%, 65%);
+    color: #fff;
+}
+
+.text{
+    margin-left: 20px;
+}
+
+.text > h2{
+    font-size: 24px;
+}
+
+.text > p{
+    font-weight: 300;
+}
+
+
+.circle{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    /* border: 1px solid; */
+    margin-right: 10px;
+    background: hsl(25, 47%, 15%);
+    position: relative;
+}
+
+.circle::before{
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 2px solid;
+    border-radius: 50%;
+    right:20px;
+
+}
+
+.bottom{
+
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: repeat(3,auto);
+    background: #fff;
+    margin-top:15px;
+    border-radius: 15px;
+    padding:30px;
+}
+
+.one{
+    font-size: 25px;
+    letter-spacing: 2px;
+    /* border: 1px solid; */
+    color: hsl(25, 47%, 15%);
+    padding:10px
+    
+}
+
+
+.two{
+    /* border: 1px solid; */
+    display: flex;
+    flex-direction:row-reverse;
+    justify-content:space-evenly;
+    align-items: flex-end;
+    margin-bottom: 20px;
+}
+
+.box{
+    /* border: 1px solid; */
+    width: 45px;
+    border-radius: 5px;
+    margin:35px  5px;
+    background:hsl(10, 79%, 65%) ;
+    position: relative;
+}
+
+.box::after{
+    position: absolute;
+    top:99%;
+    left:5px;
+    font-size: 13px;
+    font-weight: 600;
+    color:hsl(0, 2%, 70%);
+
+}
+
+.bar1::after{
+    content: 'mon';
+}
+.bar2::after{
+    content: 'tusd';
+}
+.bar3::after{
+    content: 'wed';
+}
+.bar4::after{
+    content: 'thrus';
+}
+.bar5::after{
+    content: 'friday';
+}
+.bar6::after{
+    content: 'saturd';
+}
+.bar7::after{
+    content: 'sund';
+}
+
+
+
+
+.box:hover{
+    background: hsl(10, 84%, 74%);
+}
+
+.box:active{
+    background: hsl(186, 34%, 60%);
+    cursor: pointer;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+.three{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding:10px;
+}
+
+.spend > p{
+
+    font-weight: 200;
+    color:hsl(10, 9%, 52%);
+}
+
+.spend > h1{
+    margin-bottom: 10px;
+    color: hsl(25, 47%, 15%);
+}
+
+.percent > h2{
+    font-size: 18px;
+    margin-left:55px;
+    color: hsl(25, 47%, 15%);
+
+}
+
+.percent > p{
+    font-weight: 200;
+    color:hsl(10, 9%, 52%); 
+}
